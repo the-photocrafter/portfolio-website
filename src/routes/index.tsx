@@ -1,23 +1,23 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Youtube, Instagram, Mail, MessageCircle, ExternalLink, Camera, Sparkles, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import heroPortrait from "@/assets/IMG_9219.jpeg.asset.json";
-import ytAvatar from "@/assets/IMG_9219.jpeg.asset.json";
-import pjpAvatar from "@/assets/IMG_6194.jpeg.asset.json";
-import upjAvatar from "@/assets/IMG_1414.jpeg.asset.json";
-import g4 from "@/assets/IMG_2408.png.asset.json";
-import g5 from "@/assets/IMG_2409.png.asset.json";
-import g6 from "@/assets/IMG_2410.png.asset.json";
-import g7 from "@/assets/IMG_2411.png.asset.json";
-import n1 from "@/assets/IMG_3643.jpeg.asset.json";
-import n2 from "@/assets/IMG_3645.jpeg.asset.json";
-import n3 from "@/assets/IMG_3644.jpeg.asset.json";
-import n4 from "@/assets/IMG_3646.jpeg.asset.json";
-import n5 from "@/assets/IMG_3648.jpeg.asset.json";
-import n6 from "@/assets/IMG_3649.jpeg.asset.json";
-import n7 from "@/assets/IMG_3650.jpeg.asset.json";
-import n8 from "@/assets/IMG_3651.jpeg.asset.json";
-import n9 from "@/assets/IMG_3652.jpeg.asset.json";
+import heroPortrait from "@/assets/IMG_9219.jpeg";
+import ytAvatar from "@/assets/IMG_9219.jpeg";
+import pjpAvatar from "@/assets/IMG_6194.jpeg";
+import upjAvatar from "@/assets/IMG_1414.jpeg";
+import g4 from "@/assets/IMG_2407.png";
+import g5 from "@/assets/IMG_2409.png";
+import g6 from "@/assets/IMG_2410.png";
+import g7 from "@/assets/IMG_2411.png";
+import n1 from "@/assets/IMG_3643.jpeg";
+import n2 from "@/assets/IMG_3645.jpeg";
+import n3 from "@/assets/IMG_3644.jpeg";
+import n4 from "@/assets/IMG_3646.jpeg";
+import n5 from "@/assets/IMG_3648.jpeg";
+import n6 from "@/assets/IMG_3649.jpeg";
+import n7 from "@/assets/IMG_3650.jpeg";
+import n8 from "@/assets/IMG_3651.jpeg";
+import n9 from "@/assets/IMG_3652.jpeg";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -32,7 +32,7 @@ const platforms = [
     tagline: "Long-form technical deep-dives, gear reviews, and professional workflow breakdowns.",
     followers: "4.3M+ Views",
     link: "https://youtube.com/@the.photocrafter?si=isBIY7bpTaUE1Psy",
-    avatar: ytAvatar.url,
+    avatar: ytAvatar,
     Icon: Youtube,
     accent: "from-primary/30 to-transparent",
   },
@@ -42,7 +42,7 @@ const platforms = [
     tagline: "High-end visual storytelling, behind-the-scenes, and the art of commercial photography.",
     followers: "390K+ Views",
     link: "https://www.instagram.com/philip_james_photography?igsh=MWV1YmZucGp2c3BxZQ==",
-    avatar: pjpAvatar.url,
+    avatar: pjpAvatar,
     Icon: Camera,
     accent: "from-accent/30 to-transparent",
   },
@@ -52,26 +52,26 @@ const platforms = [
     tagline: "Raw, unfiltered daily life, vlogs, and the lifestyle behind the lens.",
     followers: "66K+ Views",
     link: "https://www.instagram.com/unfiltered.pj?igsh=MTR3MGFyb2h4bmtmYg%3D%3D&utm_source=qr",
-    avatar: upjAvatar.url,
+    avatar: upjAvatar,
     Icon: Instagram,
     accent: "from-primary/20 to-accent/20",
   },
 ];
 
 const gallery = [
-  { src: n1.url, span: "row-span-2 col-span-2" },
-  { src: n2.url, span: "row-span-2" },
-  { src: n3.url, span: "row-span-2" },
-  { src: n4.url, span: "" },
-  { src: n5.url, span: "" },
-  { src: n6.url, span: "" },
-  { src: n7.url, span: "" },
-  { src: n8.url, span: "" },
-  { src: n9.url, span: "" },
-  { src: g4.url, span: "" },
-  { src: g5.url, span: "" },
-  { src: g6.url, span: "" },
-  { src: g7.url, span: "" },
+  { src: n1, span: "row-span-2 col-span-2" },
+  { src: n2, span: "row-span-2" },
+  { src: n3, span: "row-span-2" },
+  { src: n4, span: "" },
+  { src: n5, span: "" },
+  { src: n6, span: "" },
+  { src: n7, span: "" },
+  { src: n8, span: "" },
+  { src: n9, span: "" },
+  { src: g4, span: "" },
+  { src: g5, span: "" },
+  { src: g6, span: "" },
+  { src: g7, span: "" },
 ];
 
 function Index() {
@@ -178,7 +178,7 @@ function Index() {
             <div className="relative mx-auto max-w-md">
               <div className="absolute -inset-4 rounded-3xl bg-gradient-to-br from-primary/40 via-transparent to-accent/30 opacity-60 blur-2xl" />
               <div className="relative overflow-hidden rounded-3xl border border-border bg-card">
-                <img src={heroPortrait.url} alt="Philip James portrait" className="aspect-[4/5] w-full object-cover" />
+                <img src={heroPortrait} alt="Philip James portrait" className="aspect-[4/5] w-full object-cover" />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between rounded-2xl border border-border/60 bg-background/70 px-4 py-3 backdrop-blur-xl">
                   <div>
